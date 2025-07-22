@@ -10,10 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_06_153051) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
+ActiveRecord::Schema[7.2].define(version: 2022_06_06_153051) do
   create_table "widgets", force: :cascade do |t|
     t.string "name"
     t.text "description"
@@ -21,5 +18,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_06_153051) do
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
   end
-
 end

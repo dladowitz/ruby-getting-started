@@ -3,8 +3,6 @@ ruby '>= 3.1', '< 3.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 7.2.2'
-# Use postgresql as the database for Active Record
-gem 'pg', '~> 1.5.9'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -15,6 +13,7 @@ gem 'coffee-rails'
 # gem 'therubyracer',  platforms: :ruby
 gem 'bootsnap', require: false
 gem 'listen'
+gem 'cowsay'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -39,3 +38,15 @@ gem 'puma'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :production do
+    # Use postgresql as the database for Active Record
+    gem 'pg', '~> 1.5.9'
+end
+
+group :development, :test do
+    # Use console on exceptions pages [https://github.com/rails/web-console]
+    gem "web-console"
+
+    # Use sqlite3 as the database for Active Record
+    gem "sqlite3", ">= 2.1"
+end
