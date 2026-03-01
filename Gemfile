@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '>= 3.1', '< 3.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 7.2.2'
+gem 'rails', '~> 8.1.2'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -40,7 +40,7 @@ gem 'puma'
 
 group :production do
     # Use postgresql as the database for Active Record
-    gem 'pg', '~> 1.5.9'
+    gem 'pg', '~> 1.6.3'
 end
 
 group :development, :test do
